@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import prisma from "@/lib/Prisma";
+import prisma from "@/_lib/Prisma";
 import bcrypt from "bcrypt";
-import { validationRegistSchema } from "@/src/validationSchema";
+import { validationRegistSchema } from "@/validationSchema";
 
 export async function POST(req: NextRequest) {
     const data = await req.json();
